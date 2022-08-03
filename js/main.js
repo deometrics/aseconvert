@@ -9,6 +9,7 @@ function submitForm(e) {
     for(let i =0; i < files.files.length; i++) {
             formData.append("files", files.files[i]);
     }
+    
     fetch("https://aseconvert.herokuapp.com/upload", {
         method: 'POST',
         body: formData,
