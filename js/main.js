@@ -18,7 +18,7 @@ function submitForm(e) {
                 $('#home').fadeOut(700, function(){
                     const el = document.createElement('div')
                     el.setAttribute('id', 'group')
-                    $(el).addClass('flex gap-2 w-max flex-wrap justify-start m-auto')
+                    $(el).addClass('flex gap-2 w-max flex-wrap justify-center m-auto')
                     $(el).css("display", "none");
                     el.innerHTML = text;
                     const body = document.querySelector('body')
