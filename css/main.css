@@ -95,11 +95,6 @@ textarea {
  * Hide visually and from screen readers
  */
 
-.hidden,
-[hidden] {
-  display: none !important;
-}
-
 /*
  * Hide only visually, but have it available for screen readers:
  * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
@@ -265,5 +260,23 @@ textarea {
 
 input[type="file"] {
   display: none;
+}
+
+.copyButton{
+  cursor: pointer;
+  transition: 100ms ease-in-out;
+}
+
+.copyButton:hover{
+  opacity: 60%
+}
+
+.copyable{
+  transition: transform  200ms ease-in-out, box-shadow 200ms ease-in-out;
+}
+
+.copyable:hover{
+  transform: scale(1.05);
+  box-shadow: 0.3em 0.3em 0 0.1em #2e3744;
 }
 
